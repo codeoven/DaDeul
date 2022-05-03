@@ -19,13 +19,14 @@ class _HomeState extends State<Home> {
           child: SafeArea(
             bottom: false,
             child: WebView(
-              initialUrl: 'http://dadeul.com',
+              initialUrl: 'https://homepick.cafe24.com/default',
               javascriptMode: JavascriptMode.unrestricted,
               onWebViewCreated: (WebViewController controller) {
                 _controller = controller;
               },
               navigationDelegate: (NavigationRequest request) {
-                if (request.url.startsWith("mailto:") || request.url.startsWith("tel:")) {
+                if (request.url.startsWith("mailto:") ||
+                    request.url.startsWith("tel:")) {
                   launch(request.url);
 
                   return NavigationDecision.prevent;

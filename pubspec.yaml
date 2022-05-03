@@ -1,6 +1,6 @@
 name: dadeul
 
-version: 1.0.0+5
+version: 1.0.1+6
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -8,8 +8,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  webview_flutter: ^0.3.13
-  url_launcher: ^5.1.2
+  webview_flutter: ^3.0.2
+  url_launcher: ^6.1.0
 
 flutter:
   uses-material-design: true
